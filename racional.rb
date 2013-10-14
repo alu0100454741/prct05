@@ -23,19 +23,23 @@ class Fraccion
 
 	def *(other)
 		return Fraccion.new(@numerador*other,   @denominador) if other.is_a? Numeric
-    	return Fraccion.new(@numerador*other.numerador, @denominador*other.denominador) if other.is_a? Fraccion
+    		return Fraccion.new(@numerador*other.numerador, @denominador*other.denominador) if other.is_a? Fraccion
 	end
 
 	#Division de Numeros Racionales
 	def /(other)
 		return Fraccion.new(@denominador*other,   @numerador) if other.is_a? Numeric
-    	return Fraccion.new(@numerador*other.denominador, @denominador*other.numerador) if other.is_a? Fraccion
+	    	return Fraccion.new(@numerador*other.denominador, @denominador*other.numerador) if other.is_a? Fraccion
+	end
+
+	def +(other)
+
 	end
 
 	def coerce(other)
-    	[self, other]
-    end
-
+    		[self, other]
+    	end
+	
 end
 
 
