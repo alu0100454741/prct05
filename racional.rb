@@ -1,6 +1,6 @@
 # Clase para crear objetos racionales
-require "./lib/gcd.rb"
-require "./lib/lcm.rb"
+require "./gcd.rb"
+require "./lcm.rb"
 
 class Fraccion
   
